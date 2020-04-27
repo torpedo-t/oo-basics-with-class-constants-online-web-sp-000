@@ -7,7 +7,8 @@ class Shoe
 
   def initialize(brand)
     @brand = brand
-    BRANDS << brand.clear
+    if @brand == brand.new
+    BRANDS << brand
   end
 binding.pry
   def cobble
